@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>system school</title>
+    <link rel="stylesheet" href="infotable.css">
+    <link rel="icon"
+        href="https://th.bing.com/th?id=OIP.yPR4iJ32JvQHsNp73k9DcAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+
+            <div class="container-content">
+                <center>
+                    <img src="https://th.bing.com/th?id=OIP.yPR4iJ32JvQHsNp73k9DcAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                        alt="">
+                    <h3>taha kourani</h3>
+                    <p>student</p>
+                    <button class="viewprofile">view profile</button>
+                </center>
+                <br>
+                <div class="container-links">
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i>home</a></li>
+                        <li><a href="about.html"><i class="fas fa-address-card"></i>about</a></li>
+                        <li><a href="courses.html"><i class="fab fa-discourse"></i>courses</a></li>
+                        <li><a href="index.html"><i class="fas fa-user-astronaut"></i>teachers</a></li>
+                        <li><a href="contact.html" id="contactme"><i class="fas fa-user"></i>contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </aside>
+        <nav>
+            <div class="info-container">
+                <h3>educa <span>.</span></h3>
+            </div>
+            <div class="search-container">
+                <input type="search" name="search" id="search" placeholder="search courses.."><i
+                    class="fas fa-search"></i>
+            </div>
+            <div class="font-icons">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-bars"></i></a></li>
+                    <li><a href="index.html" class="bt"><i class="fas fa-user "></i></a></li>
+                    <li><a href="index.html"><i class="fas fa-user-cog"></i></a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="container-profile">
+            <center>
+                <img src="https://th.bing.com/th?id=OIP.yPR4iJ32JvQHsNp73k9DcAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                    alt="">
+                <h3>taha kourani</h3>
+                <p>student</p>
+                <button class="viewprofile">view profile</button>
+            </center>
+            <div class="button-profile">
+                <button id="firstbtn">login</button>
+                <button id="secondbtn">register</button>
+            </div>
+        </div>
+        <div class="main-content">
+
+            <div class="view-container">
+              <table>
+                <tr>
+                    <th>email</th>
+                    <th>password</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <!---tbody---->
+                <tbody id="body">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><a href="update.html" class="updating-data">update</a></td>
+                        <td><a href="" class="deleting-data">delete</a></td>
+            
+                    </tr>
+                    
+                </tbody>
+              </table>
+            </div>
+         
+            <footer class="copyright-container">
+                 <center>
+              <h4>copyright as taha kourani || <span> full stack develloper</span></h4>
+                 </center>
+            </footer>
+            <!--------update profile---------->
+            <center>
+            <div class="update-container">
+                <h3>update profile</h3>
+                <br>
+                <input type="text" name="id" id="id" placeholder="your id">
+                <br>
+                <input type="email" name="email" id="email" placeholder="your email">
+                <br>
+                <input type="text" name="degree" id="degree" placeholder="student degree">
+                <br>
+                <input type="date" name="birthday" id="universityname" placeholder="university name">
+                <br>
+                <input type="file" name="file" id="file" placeholder="schoose images">
+                <button class="clickupdate">update profile</button>
+            </div>
+            </center>
+            <!------contact container-------------->
+            <div class="contact-container-mid">
+                <div class="first-container-contact"></div>
+                <div class="second-container-contact">
+                    <center>
+                        <h3>get in touch</h3>
+                        <form method="POST">
+                           <input type="text" name="name" id="name" placeholder="write your name">
+                           <br>
+                           <input type="email" name="email" id="email" placeholder="email">
+                           <br>
+                           <input type="password" name="password" id="password" placeholder="password">
+                           <br>
+                           <input type="password" name="confirmpassword" id="confirmpassword" placeholder="retype your password">
+                          <button name="contact" class="co"> contact now</button>
+                          <p class="or">or</p>
+                          <button class="continue"><i class="fa-brands fa-facebook"></i>continue with facebook</button>
+                        </form>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="javascript/javascript.js">
+
+</script>
+<script>
+    $(document).ready(function () {
+        $(".bt").click(function () {
+            $(".container-profile").slideDown()
+        })
+        $("#firstbtn").click(function () {
+            $(".login-container").slideToggle();
+            $(".container-profile").slideUp();
+        })
+        $("#logbtn").click(function () {
+            $(".login-container").slideUp();
+            $(".register-container").slideToggle();
+        })
+        $(".register").click(function () {
+            $("register-container").slideUp()
+        })
+        $(".viewprofile").click(function(){
+            $(".view-container").slideToggle();
+            $(".container-profile").slideUp()
+        })
+        $("#update").click(function(){
+            $(".view-container").slideUp();
+            $(".update-container").slideDown()
+        })
+        $(".clickupdate").click(function(){
+            $(".update-container").slideUp()
+        })
+        $(".checking").click(function(){
+            $(".view-container").slideUp();
+            $(".container-profile").slideToggle()
+        })
+        
+    })
+</script>
+
+</html>

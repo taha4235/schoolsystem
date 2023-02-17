@@ -1,0 +1,646 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    height: calc(100% - 55px);
+    background-color: white;
+    box-shadow: 2px 2px 2px silver;
+   position: fixed;
+   margin-top: 55px;
+}
+
+.viewprofile {
+    margin-top: 10px;
+    width: 90%;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ff00ff;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.viewprofile:hover {
+    background-color: #333;
+    transition: background 1s;
+}
+
+aside img,
+.container-profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.container aside p,
+.container-profile p {
+    font-size: 19px;
+    color: #ccc;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.container aside h3 {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #333;
+}
+
+nav {
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px silver;
+    display: flex;
+    justify-content: space-between;
+    position: fixed
+}
+
+.container-links ul li {
+    list-style: none;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.container-links ul li a {
+    text-decoration: none;
+    color: #ff00ff;
+    text-transform: capitalize;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container-links ul li a:hover {
+    background-color: whitesmoke;
+    transition: background 1s;
+}
+
+.container-links ul li a i {
+    margin-right: 10px;
+}
+
+.info-container {
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+
+.info-container h3,
+.container-profile h3 {
+    font-size: 21px;
+    text-transform: capitalize;
+    color: #333;
+    font-weight: 300;
+}
+
+.info-container h3 span {
+    color: #ff00ff;
+}
+
+.search-container {
+    position: relative;
+    top: 10px;
+    width: 400px;
+    height: 40px;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.search-container input {
+    width: 90%;
+    height: 100%;
+    background-color: #ccc;
+    border: 0;
+    outline: 0;
+    
+}
+
+.search-container i {
+    position: relative;
+    top: 1px;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    left: 20px;
+}
+
+.font-icons ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
+
+.font-icons ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    font-size: 17px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.font-icons ul li a:hover {
+    background-color: #333;
+    transition: background 1s;
+    color: white;
+}
+
+.container-profile {
+    width: 300px;
+    height: 360px;
+    background-color: white;
+    margin-top: 100px;
+    position: absolute;
+    margin-left: 1000px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px silver;
+  
+}
+
+.button-profile {
+    width: 100%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+}
+
+.button-profile button {
+    width: 120px;
+    height: 33px;
+    outline: 0;
+    border: 0;
+    background-color: orange;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.main-content .login-container {
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    position: absolute;
+    top: 200px;
+    right: 400px;
+    border-radius: 22px;
+ display: none;
+}
+.login-container h3{
+    font-size: 22px;
+    padding: 10px;
+    color: #333;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.login-container input{
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #d2d2d2;
+}
+.login-container button{
+    width: 80%;
+    cursor: pointer;
+    height: 40px;
+    outline: 0;
+    border:0;
+    background-color: #ff00ff;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.login-container button:hover{
+    background-color: #333;
+    transition: background 1s;
+}
+.register-container,.update-container{
+    width: 400px;
+    height: 420px;
+    background-color: white;
+    position: absolute;
+    top: 170px;
+    right: 400px;
+    border-radius: 22px;
+    display: none;
+}
+.register-container h3,.update-container h3{
+    font-size: 21px;
+    color: #333;
+    text-transform: capitalize;
+    padding: 10px;
+    cursor: pointer;
+}
+.register-container input ,.update-container input{
+    width: 80%;
+    margin-bottom: 20px;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    background-color: #d2d2d2;
+    border-radius: 5px;
+}
+.register-container button,.update-container button{
+    width: 80%;
+ height: 40px;
+ background-color: #ff00ff;
+ color: white;
+ outline: 0;
+ border: 0;
+ border-radius: 4px;
+ text-transform: capitalize;
+ cursor: pointer;
+}
+.register-container button:hover{
+    background-color: #333;
+    transition: background 1s;
+}
+.view-container{
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    width: 70%;
+    display: none;
+}
+.view-container h3{
+    font-size: 27px;
+    text-transform: capitalize;
+    color: #333;
+    font-weight: 300;
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    padding: 10px;
+}
+.content-profile img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.content-profile{
+    box-shadow: 2px 2px 2px 2px silver;
+    padding: 10px;
+}
+.content-profile h4{
+    font-size: 22px;
+    color: #333;
+    text-transform: capitalize;
+}
+.content-profile p{
+    font-size: 21px;
+    text-transform: capitalize;
+    color: #ccc;
+    margin-top: 20px;
+}
+.content-profile button{
+    padding: 10px;
+    width: 210px;
+    outline: 0;
+    border: 0;
+    margin-top: 10px;
+    background-color: #ff00ff;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+.container-profile{
+    display: none;
+}
+.content-profile button:hover{
+    background-color: #333;
+    transition: background 1s;
+}
+.all-container{
+    width: 100%;
+    height: 220px;
+}
+.all-container .container-1{
+    width: 300px;
+    height: 150px;
+    background-color: #ccc;
+    margin-left: 10px;
+    border-radius: 5px;
+    
+}
+.all-container{
+    display: flex;
+    margin-top: 40px;
+}
+.all-container .container-2{
+    width: 300px;
+    height: 150px;
+    background-color: #ccc;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.all-container .container-3{
+    width: 300px;
+    height: 150px;
+    background-color: #ccc;
+    margin-left: 10px;
+    border-radius:5px;
+}
+.all-container .container-1 .container-1-info{
+    float: left;
+    margin: 20px 40px;
+}
+.all-container .container-2 .container-1-info{
+    float: left;
+    margin: 20px 40px;
+}
+.all-container .container-3 .container-1-info{
+    float: left;
+    margin: 20px 40px;
+}
+.all-container .container-1 .container-1-info p{
+   font-size: 12px;
+   color: #333;
+   
+}
+.all-container .container-2 .container-1-info p{
+    font-size: 12px;
+    color: #333;
+    
+}
+.all-container .container-3 .container-1-info p{
+    font-size: 12px;
+   color: #333;
+}
+.container-1-info h5{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #333;
+}
+.copyright-container{
+    width: 1078px;
+    height: 55px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px silver;
+    top: 800px;
+    left: 270px;
+   position: absolute;
+}
+
+.container-1-info i{
+    float: left;
+    position: relative;
+}
+.copyright-container h4{
+    position: relative;
+    top: 20px;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #333;
+    font-weight: 300;
+}
+.copyright-container h4 span{
+    color: #ff00ff;
+}
+.contact-container-mid{
+    width: 70%;
+    height: 70vh;
+    position: absolute;
+    top: 100px;
+    display: flex;
+    left: 290px;
+    box-shadow: 2px 2px 2px 2px silver;
+}
+
+.first-container-contact{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://th.bing.com/th?id=OIP.x_TysC7g2nwHl3SvxDnL3AHaEz&w=310&h=201&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2);
+    background-position: center;
+    background-size: cover;
+}
+.second-container-contact{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container-mid{
+    display: none;
+}
+.second-container-contact h3{
+    color: #333;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px;
+    cursor: pointer;
+}
+.second-container-contact form input{
+    margin-bottom: 30px;
+    width: 90%;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+.second-container-contact form .co{
+    width: 90%;
+    height: 40px;
+    outline: 0;
+    border:0;
+    background-color: #ff00ff;
+    color: #fff;
+   text-transform: capitalize;
+   border-radius: 6px;
+}
+.second-container-contact form .or{
+    margin-top: 20px;
+}
+.second-container-contact form .or::before{
+    width: 190px;
+    height: 1px;
+    position: absolute;
+    background-color: black;
+    content: '';
+    margin-left: -200px;
+    margin-top: 8px;
+}
+.second-container-contact form .or::after{
+    content: '';
+    width: 190px;
+    height: 1px;
+    background-color: #222;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 8px;
+
+}
+.second-container-contact form .continue{
+    width: 90%;
+    margin-top: 10px;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    background-color: royalblue;
+    color: white;
+    text-transform: capitalize;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.second-container-contact form .continue i{
+    margin-right: 10px;
+}
+.second-container-contact form .continue:hover{
+    background-color: transparent;
+    border: 1px solid royalblue;
+    transition: background 1s;
+    color: royalblue;
+}
+.view-container-courses{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 70px;
+    left: 270px;
+}
+.view-container-courses .info-courses {
+    margin: 20px 30px;
+}
+.view-container-courses .info-courses h3{
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #333;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    padding: 10px;
+}
+.view-container-courses .info-courses h3 i{
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.courses-container-all{
+    display: flex;
+    margin: 20px 50px;
+}
+.courses-container-all .container-courses{
+    width: 400px;
+    height: 200px;
+    box-shadow: 2px 2px 2px 2px silver;
+    margin-right: 10px;
+}
+.courses-container-all .container-courses img{
+    width: 100%;
+  display: none;
+}
+.courses-container-all .container-courses:hover{
+    transform: translateY(3px);
+}
+.container-courses-info-ta{
+    width: 100%;
+    height: 100%;
+    background-color: silver;
+}
+.container-courses-info-ta h4{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #333;
+    position: relative;
+    top: 20px; 
+}
+.container-courses-info-ta p{
+    font-size: 12px;
+    margin-top: 40px;
+}
+.container-courses-info-ta button{
+    margin-top: 40px;
+    width: 90%;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    background-color: #ff00ff;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.container-courses-info-ta button:hover{
+    background-color: #222;
+    transition: background 1s;
+    color: white;
+    border: 1px solid #333;
+}
+.copyright-container{
+    top: 900px;
+}
+.courses-info-about-us h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #333;
+    font-weight: 300;
+    font-style: italic;
+}
+.courses-info-about-us h3 i{
+    margin-right: 10px;
+}
+.info-container-courses i{
+    font-size: 27px;
+    color: #333;
+    position: relative;
+    top: 10px;
+}
+.info-container-courses h5{
+    margin-top: 40px;
+    font-size: 22px;
+    color: #333;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.info-container-courses p{
+    font-size: 22px;
+    margin-top: 12px;
+    color: #333;
+    text-transform: capitalize;
+}
+.info-container-courses button{
+    margin-top: 30px;
+    width: 90%;
+    height: 33px;
+    background-color: #ff00ff;
+    color: #fff;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.info-container-courses button:hover{
+    background-color: #333;
+    transition: background 1s;
+    border: 1px solid #333;
+    color: white;
+}
